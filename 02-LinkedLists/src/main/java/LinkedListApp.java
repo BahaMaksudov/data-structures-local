@@ -16,7 +16,7 @@ public class LinkedListApp {
 //        list1.printNodes();
 
 
-        //Assignments
+        //Assignment 3 remove Duplicates from LinkedList
         System.out.println("----------Remove Duplicates from LinkedList -------------------");
         MySinglyLinkedList list2=new MySinglyLinkedList();
         int[] numbers={1,1,2,2,2,3,4,4,4,4,5,6,6};
@@ -28,7 +28,7 @@ public class LinkedListApp {
         list2.printNodes();
 
 
-        //reverse LinkedList
+        //Assignment 4 reverse LinkedList
         System.out.println("----------Reverse LinkedList -------------------");
         MySinglyLinkedList list3=new MySinglyLinkedList();
         for(int i=0;i<10;i++) list3.add(i);
