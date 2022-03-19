@@ -5,7 +5,7 @@ public class MyQueue <T>{
     private Node<T> back;
     private int size;
 
-    public void push (T item) {
+    public void enqueue (T item) {
         Node<T> node=new Node(item);
         if (isEmpty()) front=back=node;
         else {
@@ -19,7 +19,7 @@ public class MyQueue <T>{
 
     public T peek() {return (T) front.getValue();}
 
-    public T pop() {
+    public T dequeue() {
         Node frontNode;
         if(isEmpty()) throw new NoSuchElementException();
         if(front==back) {
@@ -28,7 +28,6 @@ public class MyQueue <T>{
         }
         else{
             frontNode=front;
-
             front=front.getNext();
 
         }
