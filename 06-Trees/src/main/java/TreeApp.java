@@ -23,5 +23,23 @@ public class TreeApp {
         System.out.println();
         System.out.println("Tree contains 6: "+tree.containsMethod(6));
 
+        System.out.println();
+        System.out.println("Print Leaves of the Tree");
+        tree.printLeaves(tree.root);
+
+        System.out.println();
+        System.out.println("The number of leaves in a Tree: " + tree.countLeaves(tree.root));
+
+        System.out.println();
+        System.out.println("The SUM of leaves value: " + tree.findSumOfLeavesR(tree.root));
+
+        System.out.println();
+        System.out.println("The Height of the Tree of the root: " + tree.height(tree.root));
+
+        System.out.println();
+        System.out.println("The Height of the Left Child: " + tree.height(tree.root.leftChild));
+
+
+
     }
 }

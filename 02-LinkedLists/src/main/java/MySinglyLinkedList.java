@@ -48,7 +48,7 @@ public class MySinglyLinkedList {
         Node prev = head;
         while (current != null) {
             if (current.value == value) {// if you find a match
-                if (current == head) { // if the item tobe deleted is the head
+                if (current == head) { // if the item to be deleted is the head
                     head = current.next;
                     current.next = null;// will be available for garbage collection
                 } else if (current == tail) {// if the item tobe deleted is the tail
